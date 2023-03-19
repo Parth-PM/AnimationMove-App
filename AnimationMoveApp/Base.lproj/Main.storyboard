@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationMoveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yr-1T-3nP">
+                                <rect key="frame" x="22" y="238" width="348" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcm-e1-Uks">
+                                <rect key="frame" x="22" y="161" width="348" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Kut-5r-SZn">
+                                <rect key="frame" x="49" y="342" width="294" height="265"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="1Yr-1T-3nP" firstAttribute="trailing" secondItem="fcm-e1-Uks" secondAttribute="trailing" id="6dw-h8-0Lg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fcm-e1-Uks" secondAttribute="bottom" constant="597" id="Et0-Lm-0TA"/>
+                            <constraint firstItem="1Yr-1T-3nP" firstAttribute="leading" secondItem="fcm-e1-Uks" secondAttribute="leading" id="IdJ-Bh-IhZ"/>
+                            <constraint firstItem="1Yr-1T-3nP" firstAttribute="top" secondItem="fcm-e1-Uks" secondAttribute="bottom" constant="17" id="NBP-Ww-O4H"/>
+                            <constraint firstItem="Kut-5r-SZn" firstAttribute="top" secondItem="1Yr-1T-3nP" secondAttribute="bottom" constant="74" id="PEQ-bG-65G"/>
+                            <constraint firstItem="Kut-5r-SZn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SiJ-Dj-NzE"/>
+                            <constraint firstItem="fcm-e1-Uks" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="UE0-8C-cf0"/>
+                            <constraint firstItem="fcm-e1-Uks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8S-Ib-DxP"/>
+                            <constraint firstItem="Kut-5r-SZn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="cZo-1b-HWo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kut-5r-SZn" secondAttribute="bottom" constant="313" id="f0M-aa-CTb"/>
+                            <constraint firstItem="Kut-5r-SZn" firstAttribute="centerX" secondItem="1Yr-1T-3nP" secondAttribute="centerX" id="ixm-dJ-exA"/>
+                            <constraint firstItem="fcm-e1-Uks" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="o1w-65-Ved"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="Kut-5r-SZn" id="pFQ-Ay-P3j"/>
+                        <outlet property="myLabel" destination="fcm-e1-Uks" id="C74-MD-YJw"/>
+                        <outlet property="myTextField" destination="1Yr-1T-3nP" id="0Uy-58-FLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.8167938931297707" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.jpeg" width="146.8800048828125" height="101.51999664306641"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
